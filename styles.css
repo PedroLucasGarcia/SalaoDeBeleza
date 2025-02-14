@@ -1,0 +1,497 @@
+/*FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+/*-----------------------------*/
+
+/*GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+/*-----------------------------*/
+
+/*BODY*/
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------*/
+
+/*HEADER*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #d1af78;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 180px;
+    height: 6vh;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+header a {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+header a:hover {
+    color: #d1af78;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: default;
+}
+
+/*MENU HAMBURGUER*/
+.hamburger {
+    display: none;
+    gap: 5px; /* Espaçamento entre as linhas */
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+}
+.hamburger span {
+    display: block;
+    width: 30px; /* Largura das linhas do menu */
+    height: 2px; /* Espessura das linhas */
+    background: #4b321e;
+    transition: all 0.3s ease-in-out;
+}
+span.line1, span.line2 {
+    margin-bottom: 8px;
+}
+/* Animação para virar X */
+.nav.active .hamburger span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.nav.active .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+.nav.active .hamburger span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/*EFEITO DE ROLAR*/
+.scrolled {
+    background-color: white !important;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*-----------------------------*/
+
+/*SECTIONS*/
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/*-----------------------------*/
+
+/*INÍCIO*/
+section#inicio {
+    padding: 0;
+    margin: 0;
+}
+.inicio-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.imagem-capa {
+    width: 60%;
+}
+.imagem-capa img {
+    width: 100%;
+    height: 100%;
+}
+.texto-capa {
+    width: 40%;
+}
+.texto-capa img {
+    width: 200px;
+}
+.texto-capa h2 {
+    font-family: "Lobster Two", 'Poppins', Arial, sans-serif;
+    font-size: 5rem;
+    color: #4b321e;
+    padding: 10px 0;
+}
+.icones-capa i{
+    scale: 150%;
+    margin: 0 10px;
+    color: #4b321e;
+}
+.icones-capa i:hover{
+    color: #d1af78;
+}
+
+/*-----------------------------*/
+
+/*SOBRE*/
+#sobre {
+    background-image: url(img/fundo.png);
+    border-top: 1px solid #fff;
+}
+#sobre h2 {
+    padding-bottom: 20px;
+}
+.carousel-section {
+    padding: 0 0 50px 0;
+}
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    width: fit-content;
+    animation: scrollInfinite 50s linear infinite;
+    padding-bottom: 10px;
+}
+.carousel img {
+    width: 200px;
+    height: 300px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* Efeito ao passar o mouse: zoom*/
+.carousel img:hover {
+    transform: scale(1.1);
+}
+/* Animação de rolagem infinita */
+@keyframes scrollInfinite {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+/* Para evitar que a rolagem automática pare ao passar o mouse */
+.carousel:hover {
+    animation-play-state: paused;
+}
+#sobre .texto-sobre {
+    margin: 0 20%;
+    padding-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.texto-sobre button {
+    background: #d1af78;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 15px 50px;
+    
+}
+.texto-sobre button:hover {
+    background: #fff;
+    border: 1px solid #d1af78;
+    color: #d1af78;
+}
+
+/*-----------------------------*/
+
+/*SERVIÇOS*/
+#servicos {
+    background-color: rgba(230, 230, 230, 0.1);
+}
+#servicos h2 {
+    padding-bottom: 20px;
+}
+.container-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.servicos {
+    width: 50%;
+}
+/*.imagem-servicos {
+    width: 200px;
+    display: flex;
+}*/
+.texto-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.nome-servico {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.preco-servico {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #d1af78;
+}
+.descricao-servico {
+    text-align: left;
+    padding: 0 50px 20px 50px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/*-----------------------------*/
+
+/*Contato*/
+.contacto-container a {
+    font-weight: 300;
+    color: black;
+}
+.contacto-container a:hover {
+    color: #d1af78;
+}
+.contacto-container button {
+    background: #d1af78;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 15px 50px;
+    
+}
+.contacto-container button:hover {
+    background: #fff;
+    border: 1px solid #d1af78;
+    color: #d1af78;
+}
+.local {
+    margin-top: 40px;
+    width: 100%;
+    height: 35vh;
+}
+
+/*-----------------------------*/
+
+/*AGENDAMENTO*/
+#agendamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-agendamento {
+    width: 50%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.form-container {
+    flex: 1;
+    padding: 50px 120px 80px 120px;
+}
+h2 {
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label, input, select, textarea, button {
+    margin: 5px 0;
+    padding: 12px;
+    border: none;
+    font-weight: 300;
+}
+input, select, textarea {
+    background: #f1f1f1;
+}
+textarea {
+    resize: none;
+    height: 100px;
+    font-family: inherit;
+}
+#agendamentoForm button {
+    background: #d1af78;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 15px 100px;
+}
+#agendamentoForm button:hover {
+    background: #fff;
+    border: 1px solid #d1af78;
+    color: #d1af78;
+}
+
+/*-----------------------------*/
+
+/*FOOTER*/
+footer {
+    font-weight: 100;
+    background-color: #211E1C;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    color: #d1af78;
+}
+
+/*-----------------------------*/
+
+/*RESPONSIVIDADE*/
+@media (max-width: 719.99px) {
+    .nav {
+        padding: 10px 40px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #f1f1f1;
+        clip-path: circle(100px at 90% -150%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    .nav.active .nav-links {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .nav-links a {
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1) a { transition: 0.5s 0.2s; }
+    .nav-links li:nth-child(2) a { transition: 0.5s 0.4s; }
+    .nav-links li:nth-child(3) a { transition: 0.5s 0.6s; }
+    .nav.active .nav-links a {
+        opacity: 1;
+    }
+
+    .inicio-container{
+        display: block;
+    }
+    .imagem-capa {
+        width: 100vw;
+        height: 40vh;
+    }
+    .texto-capa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 60vh;
+    }
+    .texto-capa h2 {
+        font-size: 4rem;
+    }
+
+    #sobre .texto-sobre {
+        margin: 0 10%;
+        padding-top: 20px;
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+
+    .container-servicos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .servicos {
+        width: 100%;
+    }
+    .texto-servicos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .nome-servico {
+        font-size: 1rem;
+    }
+    .preco-servico {
+        font-size: 1rem;
+    }
+    .descricao-servico {
+        padding: 0 0 20px 0;
+        font-size: 1rem;
+    }
+
+    section#contacto{
+        padding: 30px 0;
+    }
+    .contacto-container a {
+        font-weight: 300;
+        color: black;
+    }
+    .contacto-container a:hover {
+        color: #d1af78;
+    }
+    .local {
+        margin-top: 40px;
+        width: 100vw;
+        height: 35vh;
+    }
+
+    .container-agendamento {
+        width: 100%;
+    }
+    .form-container {
+        padding: 50px 20px;
+    }
+}
+@media (min-width:720px) and (max-width: 1023.98px) {
+    .nav {
+        padding: 10px 80px;
+    }
+}
