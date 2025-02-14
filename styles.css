@@ -431,13 +431,16 @@ footer a:hover {
         height: 60vh;
     }
     .texto-capa h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     #sobre .texto-sobre {
         margin: 0 10%;
         padding-top: 20px;
         font-size: 1.1rem;
+        font-weight: 200;
+    }
+    .texto-sobre button {
         font-weight: 200;
     }
 
@@ -477,6 +480,9 @@ footer a:hover {
     .contacto-container a:hover {
         color: #d1af78;
     }
+    .contacto-container button {
+        font-weight: 200; 
+    }
     .local {
         margin-top: 40px;
         width: 100vw;
@@ -488,6 +494,9 @@ footer a:hover {
     }
     .form-container {
         padding: 50px 20px;
+    }
+    #agendamentoForm button {
+        font-weight: 200;
     }
 }
 @media (min-width:720px) and (max-width: 1023.98px) {
