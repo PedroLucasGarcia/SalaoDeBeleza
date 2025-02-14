@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de Beleza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="nav">
+            <div class="logo">Nome Salão</div> <!--Mudar Logo-->
+            <button class="hamburger">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </button>
+            <ul class="nav-links"> <!--Mudar Links-->
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <div class="inicio-container">
+            <div class="imagem-capa"><img src="img/capa.png" alt="Capa"></div>
+            <div class="texto-capa">
+                <img src="img/logo.png" alt="Logo">
+                <h2>Nome do Salão</h2>
+                <div class="icones-capa"> <!--Mudar os links-->
+                    <a href="https://www.instagram.com/luhhair2021/?hl=pt" target="_blank"><i class="fa-brands fa-instagram profile-icon" title="Instagram"></i></a>
+                    <a href="mailto:lluanag.70@gmail.com" target="_blank"><i class="fa-solid fa-envelope contact-icon" title="Email"></i></a>
+                    <a onclick="enviarWhatsApp2()" target="_blank"><i class="fa-brands fa-whatsapp whatsApp" title="WhatsApp"></i></a>
+                    <a href="https://maps.app.goo.gl/FeaYMV3xjNiNrd8SA" title="Local" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobre" class="carousel-section">
+        <h2>Conheça o trabalho</h2> <!--Mudar Serviços-->
+        <div class="carousel-container" id="carousel-container">
+            <div class="carousel" id="carousel">
+                <img src="img/imagem1.jpeg" alt="Cabelo 1">
+                <img src="img/imagem2.jpeg" alt="Cabelo 2">
+                <img src="img/imagem3.jpeg" alt="Cabelo 3">
+                <img src="img/imagem4.jpeg" alt="Cabelo 4">
+                <img src="img/imagem5.jpeg" alt="Cabelo 5">
+                <img src="img/imagem6.jpeg" alt="Cabelo 6">
+                <img src="img/imagem7.jpeg" alt="Cabelo 7">
+                <img src="img/imagem8.jpeg" alt="Cabelo 8">
+                <img src="img/imagem9.jpeg" alt="Cabelo 9">
+                <img src="img/imagem10.jpeg" alt="Cabelo 10">
+                <img src="img/imagem11.jpeg" alt="Cabelo 11">
+                <img src="img/imagem12.jpeg" alt="Cabelo 12">
+                <img src="img/imagem13.jpg" alt="Cabelo 13">
+                <img src="img/imagem14.jpeg" alt="Cabelo 14">
+                <img src="img/imagem15.jpeg" alt="Cabelo 15">
+                <img src="img/imagem16.jpeg" alt="Cabelo 16">
+
+                <!-- DUPLICADO PARA O EFEITO INFINITO -->
+                <img src="img/imagem1.jpeg" alt="Cabelo 1">
+                <img src="img/imagem2.jpeg" alt="Cabelo 2">
+                <img src="img/imagem3.jpeg" alt="Cabelo 3">
+                <img src="img/imagem4.jpeg" alt="Cabelo 4">
+                <img src="img/imagem5.jpeg" alt="Cabelo 5">
+                <img src="img/imagem6.jpeg" alt="Cabelo 6">
+                <img src="img/imagem7.jpeg" alt="Cabelo 7">
+                <img src="img/imagem8.jpeg" alt="Cabelo 8">
+                <img src="img/imagem9.jpeg" alt="Cabelo 9">
+                <img src="img/imagem10.jpeg" alt="Cabelo 10">
+                <img src="img/imagem11.jpeg" alt="Cabelo 11">
+                <img src="img/imagem12.jpeg" alt="Cabelo 12">
+                <img src="img/imagem13.jpg" alt="Cabelo 13">
+                <img src="img/imagem14.jpeg" alt="Cabelo 14">
+                <img src="img/imagem15.jpeg" alt="Cabelo 15">
+                <img src="img/imagem16.jpeg" alt="Cabelo 16">
+            </div>
+        </div>
+        <div class="texto-sobre">
+            <p>Reconhecemos que cada mulher possui uma essência e estilo únicos, e nosso compromisso vai muito além de cuidar dos cabelos; é sobre celebrar a autenticidade e ajudar na expressão individual através do cabelo.</p>    
+            <p>Nos dedicamos a oferecer mechas de alta qualidade, com cada detalhe cuidadosamente pensado para realçar a beleza natural do seu cabelo. Aplicamos técnicas avançadas e utilizamos produtos de primeira linha, cada um com seus benefícios, garantindo resultados que se adaptam perfeitamente com os seus cabelos.</p>
+            <p>Antes de iniciar qualquer transformação, realizamos uma entrevista detalhada com a cliente para compreender suas necessidades e avaliar a saúde do cabelo. Se identificarmos que o cabelo pode não suportar o processo, realizamos um teste de mechas.</p>
+            <p>Esse teste é fundamental para garantir a saúde do cabelo e obter o resultado desejado. Após a aprovação no teste de mecha, agendamos o melhor horário para aplicar suas mechas, assegurando um resultado perfeito e saudável para os seus fios.</p>
+            <a href="#agendamento"><button type="button">Agende seu horário</button></a>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="container-servicos">
+            <div class="servicos">
+                <div class="texto-servicos">
+                    <div class="nome-servico">Avaliações / Diagnósticos</div>
+                    <div class="preco-servico">Grátis</div>
+                </div>
+                <div class="descricao-servico">Acompanhamento profissional para encontrar o estilo certo para a textura do seu cabelo e formato do rosto.</div>
+
+                <div class="texto-servicos">
+                    <div class="nome-servico">Progressiva</div>
+                    <div class="preco-servico">Desde 80€</div>
+                </div>
+                <div class="descricao-servico">Ganhe maior controlo sobre o cabelo frisado ou ondulado. Este alisamento, sem formol, poderá proporcionar-lhe um cabelo liso até 3 meses.</div>
+
+                <div class="texto-servicos">
+                    <div class="nome-servico">Corte Feminino</div>
+                    <div class="preco-servico">Desde 20€</div>
+                </div>
+                <div class="descricao-servico">O corte de cabelo é uma das partes mais importantes da beleza feminina. É a moldura do rosto e pode realçar os seus traços naturais ou criar um novo look.</div>
+
+                <div class="texto-servicos">
+                    <div class="nome-servico">Corte Masculino</div>
+                    <div class="preco-servico">Desde 15€</div>
+                </div>
+                <div class="descricao-servico">No nosso salão, oferecemos uma variedade de cortes de cabelo para homens, para todos os estilos e tipos de cabelo. Trabalhamos com os melhores produtos e técnicas para garantir um resultado perfeito.</div>
+
+                <div class="texto-servicos">
+                    <div class="nome-servico">Coloração de Cabelo</div>
+                    <div class="preco-servico">Desde 50€</div>
+                </div>
+                <div class="descricao-servico">Coloração rica em princípios ativos hidratantes e condicionantes naturais.</div>
+
+                <div class="texto-servicos">
+                    <div class="nome-servico">Penteados Elaborados</div>
+                    <div class="preco-servico">Desde 25€</div>
+                </div>
+                <div class="descricao-servico">Penteados para festas, dias especiais ou para o seu dia a dia. Um penteado diz muito de si.</div>
+
+                <div class="texto-servicos">
+                    <div class="nome-servico">Corte Feminino</div>
+                    <div class="preco-servico">Desde 20€</div>
+                </div>
+                <div class="descricao-servico">O corte de cabelo é uma das partes mais importantes da beleza feminina. É a moldura do rosto e pode realçar os seus traços naturais ou criar um novo look.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-container">
+            <p><a href="https://maps.app.goo.gl/FeaYMV3xjNiNrd8SA" target="_blank" title="Local"><i class="fa-solid fa-location-dot" title="Local"></i> R. Macário de Castro 78, 5100-149 Lamego</a></p> <!--Adicionar a localizão do Salão no Google Maps-->
+            <p><a href="tel://351938553771" target="_blank" title="Telefone"><i class="fa-solid fa-phone contact-icon" title="Telefone"></i> +351 938 553 771</a></p> <!--Mudar Telefone-->
+            <p><a href="mailto:lluanag.70@gmail.com" title="Email" target="_blank"><i class="fa-solid fa-envelope contact-icon" title="Email"></i> lluanag.70@gmail.com</a></p>
+            <p><a href="https://www.instagram.com/luhhair2021/?hl=pt" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i> @luhhair2021</a></p> <!--Mudar Instagram-->
+            <a href="#agendamento"><button type="button">Agende seu horário</button></a>
+        </div>
+    </div>
+        <div class="local">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6939235361951!2d-7.8049965!3d41.095747300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ab5f971c7341%3A0x345f46bcfaf6b8e1!2sR.%20Mac%C3%A1rio%20de%20Castro%2078%2C%205100-149%20Lamego!5e0!3m2!1spt-BR!2spt!4v1739484498977!5m2!1spt-BR!2spt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        </div>
+    </section>
+    
+    <section id="agendamento">
+        <div class="container-agendamento">
+            <div class="form-container">
+                <h2>Efetuar Marcação</h2>
+                <form id="agendamentoForm">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required>
+    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" required>
+    
+                    <label for="servico">Serviço:</label>
+                    <select id="servico" required>
+                        <option value="">-- Selecione uma opção --</option>
+                        <option value="Corte de cabelo">Corte de cabelo</option>
+                        <option value="Manicure">Manicure</option>
+                        <option value="Pedicure">Pedicure</option>
+                        <option value="Escova">Escova</option>
+                    </select>
+    
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" required>
+    
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" required>
+    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="4" placeholder="Digite aqui alguma observação sobre o serviço..."></textarea>
+    
+                    <a><button type="button" onclick="enviarWhatsApp()">Agendar</button></a>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <p><a href="https://maps.app.goo.gl/FeaYMV3xjNiNrd8SA" title="Local" target="_blank"><i class="fa-solid fa-location-dot"></i> R. Macário de Castro 78, 5100-149 Lamego</a></p> <!--Adicionar a localizão do Salão no Google Maps-->
+        <p><a href="tel://351938553771" title="Telefone" target="_blank"><i class="fa-solid fa-phone contact-ico"></i> +351 938 553 771</a></p> <!--Mudar Telefone-->
+        <p><a href="mailto:lluanag.70@gmail.com" title="Email" target="_blank"><i class="fa-solid fa-envelope contact-icon"></i> lluanag.70@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/luhhair2021/?hl=pt" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i> @luhhair2021</a></p> <!--Mudar Instagram-->
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
