@@ -498,7 +498,9 @@ footer a:hover {
     form {
         display: flex;
         flex-direction: column;
-        width: 100%;
+    }
+    input#data, input#hora {
+        width: auto;
     }
     #agendamentoForm button {
         font-weight: 300;
