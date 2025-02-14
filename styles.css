@@ -441,7 +441,7 @@ footer a:hover {
         font-weight: 200;
     }
     .texto-sobre button {
-        font-weight: 200;
+        font-weight: 300;
     }
 
     .container-servicos {
@@ -481,7 +481,7 @@ footer a:hover {
         color: #d1af78;
     }
     .contacto-container button {
-        font-weight: 200; 
+        font-weight: 300; 
     }
     .local {
         margin-top: 40px;
@@ -495,8 +495,13 @@ footer a:hover {
     .form-container {
         padding: 50px 20px;
     }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     #agendamentoForm button {
-        font-weight: 200;
+        font-weight: 300;
     }
 }
 @media (min-width:720px) and (max-width: 1023.98px) {
