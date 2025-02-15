@@ -32,7 +32,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: #fff;
     color: #d1af78;
     transition: background-color 0.3s ease-in-out;
     z-index: 1000;
@@ -41,7 +41,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 180px;
+    padding: 10px 100px;
     height: 6vh;
 }
 ul {
@@ -102,11 +102,12 @@ span.line1, span.line2 {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/*EFEITO DE ROLAR*/
+/*
+/*EFEITO DE ROLAR
 .scrolled {
     background-color: white !important;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 /*-----------------------------*/
 
@@ -120,20 +121,20 @@ section {
 
 /*INÍCIO*/
 section#inicio {
+    margin-top: 6vh;
     padding: 0;
-    margin: 0;
 }
 .inicio-container{
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center; 
 }
 .imagem-capa {
     width: 60%;
 }
 .imagem-capa img {
     width: 100%;
-    height: 100%;
+    height: 94vh;
 }
 .texto-capa {
     width: 40%;
@@ -164,7 +165,7 @@ section#inicio {
     border-top: 1px solid #fff;
 }
 #sobre h2 {
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 .carousel-section {
     padding: 0 0 50px 0;
@@ -242,12 +243,8 @@ section#inicio {
     box-sizing: border-box;
 }
 .servicos {
-    width: 50%;
+    width: 60%;
 }
-/*.imagem-servicos {
-    width: 200px;
-    display: flex;
-}*/
 .texto-servicos {
     display: flex;
     justify-content: space-between;
@@ -310,7 +307,7 @@ section#inicio {
     align-items: center;
 }
 .container-agendamento {
-    width: 50%;
+    width: 60%;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -379,9 +376,12 @@ footer a:hover {
 /*-----------------------------*/
 
 /*RESPONSIVIDADE*/
-@media (max-width: 719.99px) {
+@media screen and (max-width: 719.98px) {
     .nav {
-        padding: 10px 40px;
+        padding: 10px 20px;
+    }
+    .logo {
+        font-size: 1.2rem;
     }
     .hamburger {
         display: block;
@@ -408,19 +408,30 @@ footer a:hover {
     .nav-links a {
         opacity: 0;
     }
-    .nav-links li:nth-child(1) a { transition: 0.5s 0.2s; }
-    .nav-links li:nth-child(2) a { transition: 0.5s 0.4s; }
-    .nav-links li:nth-child(3) a { transition: 0.5s 0.6s; }
+    .nav-links li:nth-child(1) a { 
+        transition: 0.5s 0.2s; 
+    }
+    .nav-links li:nth-child(2) a { 
+        transition: 0.5s 0.4s; 
+    }
+    .nav-links li:nth-child(3) a { 
+        transition: 0.5s 0.6s; 
+    }
     .nav.active .nav-links a {
         opacity: 1;
     }
-
+/*-----------------------------*/
     .inicio-container{
         display: block;
     }
     .imagem-capa {
         width: 100vw;
+    }
+    .imagem-capa img {
         height: 40vh;
+    }
+    .texto-capa img {
+        width: 150px;
     }
     .texto-capa {
         display: flex;
@@ -428,12 +439,12 @@ footer a:hover {
         justify-content: center;
         flex-direction: column;
         width: 100vw;
-        height: 60vh;
+        height: 54vh;
     }
     .texto-capa h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
-
+/*-----------------------------*/
     #sobre .texto-sobre {
         margin: 0 10%;
         padding-top: 20px;
@@ -443,7 +454,7 @@ footer a:hover {
     .texto-sobre button {
         font-weight: 300;
     }
-
+/*-----------------------------*/
     .container-servicos {
         display: flex;
         justify-content: center;
@@ -469,7 +480,7 @@ footer a:hover {
         padding: 0 0 20px 0;
         font-size: 1rem;
     }
-
+/*-----------------------------*/
     section#contacto{
         padding: 30px 0;
     }
@@ -488,7 +499,7 @@ footer a:hover {
         width: 100vw;
         height: 35vh;
     }
-
+/*-----------------------------*/
     .container-agendamento {
         width: 100%;
     }
@@ -504,10 +515,56 @@ footer a:hover {
     }
     #agendamentoForm button {
         font-weight: 300;
+        padding: 15px 80px;
     }
 }
-@media (min-width:720px) and (max-width: 1023.98px) {
+
+@media (min-width:720px) and (max-width: 1024px) {
     .nav {
-        padding: 10px 80px;
+        padding: 10px 20px;
+    }
+    .nav-links {
+        gap: 1.2rem;
+    }
+/*-----------------------------*/
+    .imagem-capa img {
+        height: 50vh;
+    }
+    .texto-capa img {
+        width: 100px;
+    }
+    .texto-capa h2 {
+        font-size: 3rem;
+    }
+    .icones-capa i{
+        scale: 120%;
+    }
+/*-----------------------------*/
+    #sobre .texto-sobre {
+        margin: 0 10%;
+        padding-top: 20px;
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+/*-----------------------------*/
+    .servicos {
+        width: 90%;
+    }
+/*-----------------------------*/
+    .container-agendamento {
+        width: 80%;
+    }
+    .form-container {
+        flex: 1;
+        padding: 50px 80px;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .nav {
+        height: 10vh;
+    }
+    .imagem-capa img {
+        height: 94vh    ;
     }
 }
