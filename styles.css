@@ -521,14 +521,14 @@ footer a:hover {
 
 @media (min-width:720px) and (max-width: 1024px) {
     .nav {
-        padding: 10px 20px;
+        padding: 10px 40px;
     }
     .nav-links {
         gap: 1.2rem;
     }
 /*-----------------------------*/
     .imagem-capa img {
-        height: 50vh;
+        height: 40vh;
     }
     .texto-capa img {
         width: 100px;
@@ -562,9 +562,25 @@ footer a:hover {
 
 @media (max-width: 1024px) and (orientation: landscape) {
     .nav {
+        padding: 10px 20px;
         height: 10vh;
     }
     .imagem-capa img {
-        height: 94vh    ;
+        height: 94vh;
+    }
+}
+
+@media (max-width: 719.98px) and (orientation: landscape) {
+    .inicio-container{
+        display: flex;
+    }
+    .imagem-capa img {
+        height: 94vh;
+    }
+    .texto-capa img {
+        width: 120px;
+    }
+    .texto-capa h2 {
+        font-size: 2.5rem;
     }
 }
