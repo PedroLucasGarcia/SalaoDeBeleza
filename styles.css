@@ -266,18 +266,7 @@ section#inicio {
     font-size: 1rem;
     font-weight: 200;
 }
-
-/*-----------------------------*/
-
-/*Contato*/
-.contacto-container a {
-    font-weight: 300;
-    color: black;
-}
-.contacto-container a:hover {
-    color: #d1af78;
-}
-.contacto-container button {
+.servicos button {
     background: #d1af78;
     color: white;
     cursor: pointer;
@@ -287,9 +276,20 @@ section#inicio {
     padding: 15px 50px;
     
 }
-.contacto-container button:hover {
+.servicos button:hover {
     background: #fff;
     border: 1px solid #d1af78;
+    color: #d1af78;
+}
+
+/*-----------------------------*/
+
+/*Contato*/
+.contacto-container a {
+    font-weight: 300;
+    color: black;
+}
+.contacto-container a:hover {
     color: #d1af78;
 }
 .local {
@@ -340,6 +340,9 @@ textarea {
     resize: none;
     height: 100px;
     font-family: inherit;
+}
+input#data, input#hora {
+        width: auto;
 }
 #agendamentoForm button {
     background: #d1af78;
@@ -426,6 +429,7 @@ footer a:hover {
     }
     .imagem-capa {
         width: 100vw;
+        display: none; /*----------MUDAR DEPOIS----------*/
     }
     .imagem-capa img {
         height: 40vh;
@@ -509,9 +513,6 @@ footer a:hover {
     form {
         display: flex;
         flex-direction: column;
-    }
-    input#data, input#hora {
-        width: auto;
     }
     #agendamentoForm button {
         font-weight: 300;
