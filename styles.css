@@ -289,9 +289,6 @@ section#inicio {
     font-weight: 300;
     color: black;
 }
-.contacto-container a:hover {
-    color: #d1af78;
-}
 .local {
     margin-top: 40px;
     width: 100%;
@@ -429,7 +426,6 @@ footer a:hover {
     }
     .imagem-capa {
         width: 100vw;
-        display: none; /*----------MUDAR DEPOIS----------*/
     }
     .imagem-capa img {
         height: 40vh;
