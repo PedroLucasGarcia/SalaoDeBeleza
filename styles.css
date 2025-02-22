@@ -1,6 +1,13 @@
 /*FONTE*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('font/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*-----------------------------*/
 
 /*GERAL*/
@@ -64,9 +71,11 @@ header a:hover {
     color: #d1af78;
 }
 .logo {
-    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    cursor: default;
+}
+.logo a {
+    font-size: 1.5rem; 
 }
 
 /*MENU HAMBURGUER*/
@@ -102,13 +111,6 @@ span.line1, span.line2 {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/*
-/*EFEITO DE ROLAR
-.scrolled {
-    background-color: white !important;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}*/
-
 /*-----------------------------*/
 
 /*SECTIONS*/
@@ -143,8 +145,8 @@ section#inicio {
     width: 200px;
 }
 .texto-capa h2 {
-    font-family: "Lobster Two", 'Poppins', Arial, sans-serif;
-    font-size: 5rem;
+    font-family: 'Amsterdam', "Lobster Two", 'Poppins', sans-serif;
+    font-size: 3rem;
     color: #4b321e;
     padding: 10px 0;
 }
@@ -285,9 +287,34 @@ section#inicio {
 /*-----------------------------*/
 
 /*Contato*/
+.contacto-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-self: center;
+}
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.contacto-grid span {
+    margin: 0;
+}
 .contacto-container a {
     font-weight: 300;
     color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.padding {
+  padding-left: 50px;
+}
+.contacto-container i {
+    font-size: 18px;
 }
 .local {
     margin-top: 40px;
@@ -360,16 +387,16 @@ input#data, input#hora {
 
 /*FOOTER*/
 footer {
-    font-weight: 100;
     background-color: #211E1C;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
-footer a {
+footer .contacto-container a {
     color: #fff;
+    font-weight: 100;
 }
-footer a:hover {
+footer .contacto-container a:hover {
     color: #d1af78;
 }
 
@@ -380,8 +407,8 @@ footer a:hover {
     .nav {
         padding: 10px 20px;
     }
-    .logo {
-        font-size: 1.2rem;
+    .logo a {
+        font-size: 1.2rem; 
     }
     .hamburger {
         display: block;
@@ -442,9 +469,12 @@ footer a:hover {
         height: 54vh;
     }
     .texto-capa h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 /*-----------------------------*/
+    h2.title {
+        margin-top: 6vh;
+    }
     #sobre .texto-sobre {
         margin: 0 10%;
         padding-top: 20px;
@@ -480,24 +510,25 @@ footer a:hover {
         padding: 0 0 20px 0;
         font-size: 1rem;
     }
+    .servicos button {
+        font-weight: 300  
+    }
 /*-----------------------------*/
     section#contacto{
         padding: 30px 0;
     }
-    .contacto-container a {
-        font-weight: 300;
-        color: black;
+    .contacto-grid {
+        display: block;  
     }
-    .contacto-container a:hover {
-        color: #d1af78;
+    .contacto-grid span {
+        margin: 0;
     }
-    .contacto-container button {
-        font-weight: 300; 
+    .contacto-container a { 
+        margin: 10px;
+        font-size: 15px;
     }
-    .local {
-        margin-top: 40px;
-        width: 100vw;
-        height: 35vh;
+    .padding {
+      padding-left: 0px;
     }
 /*-----------------------------*/
     .container-agendamento {
@@ -531,7 +562,7 @@ footer a:hover {
         width: 100px;
     }
     .texto-capa h2 {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
     .icones-capa i{
         scale: 120%;
@@ -548,6 +579,13 @@ footer a:hover {
         width: 90%;
     }
 /*-----------------------------*/
+    .contacto-container a {
+        font-size: 15px;
+    }
+    .padding {
+        padding-left: 30px;
+    }
+/*-----------------------------*/
     .container-agendamento {
         width: 80%;
     }
@@ -557,17 +595,35 @@ footer a:hover {
     }
 }
 
+@media (max-width: 1400px) and (orientation: landscape) {
+    .texto-capa h2 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 1024px) and (orientation: landscape) {
     .nav {
         padding: 10px 20px;
         height: 10vh;
     }
+    .logo a {
+        font-size: 1.3rem; 
+    }
     .imagem-capa img {
         height: 94vh;
+    }
+    h2.title {
+        margin-top: 10vh;
+    }
+    .texto-capa h2 {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 719.98px) and (orientation: landscape) {
+    .logo a {
+        font-size: 1.2rem; 
+    }
     .inicio-container{
         display: flex;
     }
@@ -578,6 +634,6 @@ footer a:hover {
         width: 120px;
     }
     .texto-capa h2 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 }
