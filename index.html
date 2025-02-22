@@ -10,13 +10,13 @@
 <body>
     <header id="header">
         <nav class="nav">
-            <div class="logo">Conceito & Tendência</div> <!--Mudar Logo-->
+            <div class="logo"><a href="#inicio">Conceito & Tendência</a></div>
             <button class="hamburger">
                 <span class="line1"></span>
                 <span class="line2"></span>
                 <span class="line3"></span>
             </button>
-            <ul class="nav-links"> <!--Mudar Links-->
+            <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -29,11 +29,12 @@
         <div class="inicio-container">
             <div class="imagem-capa"><img src="img/capa.png" alt="Capa"></div>
             <div class="texto-capa">
-                <img src="img/logo2.png" alt="Logo">
+                <img src="img/logo3.png" alt="Logo">
                 <h2>Conceito & Tendência</h2>
-                <div class="icones-capa"> <!--Mudar os links-->
-                    <a href="https://www.instagram.com/luhhair2021/?hl=pt" target="_blank"><i class="fa-brands fa-instagram profile-icon" title="Instagram"></i></a>
-                    <a href="mailto:lluanag.70@gmail.com" target="_blank"><i class="fa-solid fa-envelope contact-icon" title="Email"></i></a>
+                <div class="icones-capa"> 
+                    <a href="https://www.facebook.com/share/1AvU6Qxtgw/" target="_blank"><i class="fa-brands fa-facebook" title="Facebook"></i></a>
+                    <a href="https://www.instagram.com/conceito.tendencia?utm_source=qr&igsh=Y3c1N3g4Z3g3Yzdp" target="_blank"><i class="fa-brands fa-instagram profile-icon" title="Instagram"></i></a>
+                    <a href="mailto:conceitoetendencia.beleza@gmail.com" target="_blank"><i class="fa-solid fa-envelope contact-icon" title="Email"></i></a>
                     <a onclick="enviarWhatsApp2()" target="_blank"><i class="fa-brands fa-whatsapp whatsApp" title="WhatsApp"></i></a>
                     <a href="https://maps.app.goo.gl/FeaYMV3xjNiNrd8SA" title="Local" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
                 </div>
@@ -42,7 +43,7 @@
     </section>
     
     <section id="sobre" class="carousel-section">
-        <h2>Conheça o trabalho</h2> <!--Mudar Serviços-->
+        <h2 class="title">Conheça o trabalho</h2> <!--Mudar Serviços-->
         <div class="carousel-container" id="carousel-container">
             <div class="carousel" id="carousel">
                 <img src="img/imagem1.jpeg" alt="Cabelo 1">
@@ -91,7 +92,7 @@
     </section>
 
     <section id="servicos">
-        <h2>Serviços</h2>
+        <h2 class="title">Serviços</h2>
         <div class="container-servicos">
             <div class="servicos">
                 <div class="texto-servicos">
@@ -141,13 +142,35 @@
     </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
+        <h2 class="title">Contacto</h2>
         <div class="contacto-container">
-            <p><a href="https://maps.app.goo.gl/FeaYMV3xjNiNrd8SA" target="_blank" title="Local"><i class="fa-solid fa-location-dot" title="Local"></i> R. Macário de Castro 78, 5100-149 Lamego</a></p> <!--Adicionar a localizão do Salão no Google Maps-->
-            <p><a href="tel://351938553771" target="_blank" title="Telefone"><i class="fa-solid fa-phone contact-icon" title="Telefone"></i> +351 938 553 771</a></p> <!--Mudar Telefone-->
-            <p><a href="mailto:lluanag.70@gmail.com" title="Email" target="_blank"><i class="fa-solid fa-envelope contact-icon" title="Email"></i> lluanag.70@gmail.com</a></p>
-            <p><a href="https://www.instagram.com/luhhair2021/?hl=pt" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i> @luhhair2021</a></p> <!--Mudar Instagram-->
+            <div class="contacto-grid">
+                <span><a href="https://maps.app.goo.gl/FeaYMV3xjNiNrd8SA" target="_blank" title="Local">
+                    <i class="fa-solid fa-location-dot" title="Local"></i> R. Macário de Castro 78, 5100-149 Lamego
+                </a></span>
+
+                <span class="padding"><a href="mailto:conceitoetendencia.beleza@gmail.com" title="Email" target="_blank">
+                    <i class="fa-solid fa-envelope contact-icon" title="Email"></i> conceitoetendencia.beleza@gmail.com
+                </a></span>
+        
+                <span><a href="https://www.instagram.com/conceito.tendencia?utm_source=qr&igsh=Y3c1N3g4Z3g3Yzdp" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i> @conceito.tendencia
+                </a></span>
+
+                <span class="padding"><a onclick="enviarWhatsApp2()" target="_blank">
+                    <i class="fa-brands fa-whatsapp whatsApp" title="WhatsApp"></i> Mande-me uma mensagem
+                </a></span>
+                
+                <span><a href="https://www.facebook.com/share/1AvU6Qxtgw/" target="_blank">
+                    <i class="fa-brands fa-facebook" title="Facebook"></i> Conceito Tendência
+                </a></span>
+                
+                <span class="padding"><a href="tel://351923174770" target="_blank" title="Telefone">
+                    <i class="fa-solid fa-phone contact-icon" title="Telefone"></i> +351 923 174 770
+                </a></span>
+            </div>
         </div>
+        
     </div>
         <div class="local">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6939235361951!2d-7.8049965!3d41.095747300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ab5f971c7341%3A0x345f46bcfaf6b8e1!2sR.%20Mac%C3%A1rio%20de%20Castro%2078%2C%205100-149%20Lamego!5e0!3m2!1spt-BR!2spt!4v1739484498977!5m2!1spt-BR!2spt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
@@ -190,10 +213,33 @@
     </section>
     
     <footer id="footer">
-        <p><a href="https://maps.app.goo.gl/FeaYMV3xjNiNrd8SA" title="Local" target="_blank"><i class="fa-solid fa-location-dot"></i> R. Macário de Castro 78, 5100-149 Lamego</a></p> <!--Adicionar a localizão do Salão no Google Maps-->
-        <p><a href="tel://351938553771" title="Telefone" target="_blank"><i class="fa-solid fa-phone contact-ico"></i> +351 938 553 771</a></p> <!--Mudar Telefone-->
-        <p><a href="mailto:lluanag.70@gmail.com" title="Email" target="_blank"><i class="fa-solid fa-envelope contact-icon"></i> lluanag.70@gmail.com</a></p>
-        <p><a href="https://www.instagram.com/luhhair2021/?hl=pt" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i> @luhhair2021</a></p> <!--Mudar Instagram-->
+        <div class="contacto-container">
+            <div class="contacto-grid">
+                <span><a href="https://maps.app.goo.gl/FeaYMV3xjNiNrd8SA" target="_blank" title="Local">
+                    <i class="fa-solid fa-location-dot" title="Local"></i> R. Macário de Castro 78, 5100-149 Lamego
+                </a></span>
+
+                <span class="padding"><a href="mailto:conceitoetendencia.beleza@gmail.com" title="Email" target="_blank">
+                    <i class="fa-solid fa-envelope contact-icon" title="Email"></i> conceitoetendencia.beleza@gmail.com
+                </a></span>
+        
+                <span><a href="https://www.instagram.com/conceito.tendencia?utm_source=qr&igsh=Y3c1N3g4Z3g3Yzdp" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i> @conceito.tendencia
+                </a></span>
+
+                <span class="padding"><a onclick="enviarWhatsApp2()" target="_blank">
+                    <i class="fa-brands fa-whatsapp whatsApp" title="WhatsApp"></i> Mande-me uma mensagem
+                </a></span>
+                
+                <span><a href="https://www.facebook.com/share/1AvU6Qxtgw/" target="_blank">
+                    <i class="fa-brands fa-facebook" title="Facebook"></i> Conceito Tendência
+                </a></span>
+                
+                <span class="padding"><a href="tel://351923174770" target="_blank" title="Telefone">
+                    <i class="fa-solid fa-phone contact-icon" title="Telefone"></i> +351 923 174 770
+                </a></span>
+            </div>
+        </div>
     </footer>
     
     <script src="script.js"></script>
